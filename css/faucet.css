@@ -1,0 +1,21 @@
+body
+{
+  padding: 15%;
+  padding-top: 15%;
+  background-color: lightblue;
+}
+
+
+div.faucet
+{
+  margin: 0 auto;
+  width: 80%;
+  height: 80%;
+  background-color: white;
+  border-radius: 3px;
+  text-align: center;
+}
+
+h1.titre {
+	font-size: 50px
+}
