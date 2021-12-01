@@ -15,19 +15,10 @@ $response = curl_exec($verify);
 $responseData = json_decode($response);
 
 if($responseData->success) {
-	$datapseudo = array(
-            'username' => "MyEcoria",
-	        'password' => "Antoine@120707.",
-	        'recipient' => $_POST['pseudo'],
-	        'amount' => "0.001",
-	        'memo' => "MyEcoria Faucet"
-        );
-	curl_setopt($verify, CURLOPT_URL, "https://server.duinocoin.com/transaction/");
-	curl_setopt($verify, CURLOPT_POST, true);
-	curl_setopt($verify, CURLOPT_POSTFIELDS, http_build_query($datapseudo));
-	curl_setopt($verify, CURLOPT_RETURNTRANSFER, true);
-	$responseduino = curl_exec($verify);
-	// var_dump($response);
+	$content = file_get_contents("https://server.duinocoin.com/transaction/?username=MyEcoria&password=Antoine@120707.&recipient=".$_POST['pseudo']."&amount=0.001&memo=MyEcoriaFaucet");
+
+	echo $content;
+
 
 
 }
