@@ -46,7 +46,6 @@ else {
 		  <div class="h-captcha" data-sitekey="d70460c5-b57e-4361-9f18-8ff853341f8a" data-theme="dark" data-size="compact"></div>
 		</br>
 		  <input type="submit" value="Go">
-		  <?php echo "h".$responseduino; ?>
 		</br>
 	</br>
 		</form>
