@@ -1,3 +1,3 @@
 # Faucet DuinoCoin
 
-![Logo](logo/logo.jpg)
+![Logo](logo/logo.png)
