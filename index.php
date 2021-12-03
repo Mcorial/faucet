@@ -18,13 +18,16 @@ if($responseData->success) {
 	$content = file_get_contents("https://server.duinocoin.com/transaction/?username=MyEcoria&password=Antoine@120707.&recipient=".$_POST['pseudo']."&amount=0.001&memo=MyEcoriaFaucet");
 
 	echo $content;
+	header("Location: valide.php");
+	exit();
 
 
 
 }
  
 else {
-   // return error to user; they did not pass
+   header("Location: valide.php");
+   exit();
 }
 ?>
 <!DOCTYPE html>
