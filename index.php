@@ -26,7 +26,7 @@ if($responseData->success) {
 }
  
 else {
-   header("Location: valide.php");
+   header("Location: invalide.php");
    exit();
 }
 ?>
