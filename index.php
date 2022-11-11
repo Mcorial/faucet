@@ -1,7 +1,7 @@
 <?php
 
 $data = array(
-            'secret' => "0xB88308E594DdCF79Bb24A7EEf83CC723DDFd3853",
+            'secret' => "",
             'response' => $_POST['h-captcha-response']
         );
 
@@ -15,7 +15,7 @@ $response = curl_exec($verify);
 $responseData = json_decode($response);
 
 if($responseData->success) {
-	$content = file_get_contents("https://server.duinocoin.com/transaction/?username=MyEcoria&password=Antoine@120707.&recipient=".$_POST['pseudo']."&amount=0.001&memo=MyEcoriaFaucet");
+	$content = file_get_contents("https://server.duinocoin.com/transaction/?username=MyEcoria&password=&recipient=".$_POST['pseudo']."&amount=0.001&memo=MyEcoriaFaucet");
 
 	echo $content;
 	header("Location: valide.php");
